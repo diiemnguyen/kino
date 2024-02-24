@@ -13,7 +13,7 @@
             padding: 0;
         }
         header {
-            background-color: #333;
+            background-color: #4f4949;
             color: #fff;
             text-align: center;
             padding: 1em;
@@ -30,30 +30,63 @@
         .service-item {
             margin-bottom: 1em;
         }
+        #set_img {
+            background-color: #4f4949;
+            text-align: center;
+        }
+            #set_img > img {
+                width: 60%;
+                height:auto;
+            }
+
+        #set_card {
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+            #set_card > img {
+                width: 50%;
+                height: auto;
+                margin-left: 0;
+                margin-right: 0;
+                border: 5px solid #4f4949;
+                
+            }
+        @media (max-width: 800px) {
+            /* CSS that should be displayed if width is equal to or less than 800px goes here */
+            .set_email, .set_phone, .set_web {
+                display: none;
+            }
+        }
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Kino Handyman Services</h1>
+        <div id="set_img" ><img src="img/logo_long.png" alt="kino"></div>
     </header>
     <div class="container">
-        <h2>Kino and Chino Services</h2>
+        <h2>
+            <span class="set_phone">Phone:</span> <a href="tel:(408) 417-9041">(408) 417-9041</a>
+            &nbsp;&nbsp;&nbsp;
+            <span class="set_email">Email:</span> <a href="mailto:diiemnguyen@yahoo.com?Subject=kinohandyman_services">kino.salinasb@gmail.com</a>
+            &nbsp;&nbsp;&nbsp;
+            <span class="set_web">Web:</span> <a href="https://kino.diemweb.com" target="_blank">https://kino.diemweb.com</a>
+            
+        </h2>
+        <h2>Services in Santa Clara, California</h2>
         <ol>
             <li class="service-item">Door hinges fixing or installation</li>
             <li class="service-item">Carpentry hinges fixing or installation</li>
             <li class="service-item">Gabarge disposal (kitchen) fixing or installation</li>
             <li class="service-item">Faucets installation</li>
-            <li class="service-item">Cleaning Wall Heater</li>
-            <li class="service-item">Cleaning AC outside</li>
+            <li class="service-item">Cleaning Wall Heater and AC outside</li>
             <li class="service-item">Drywall Sheets replacing or fixing</li>
 
             <!-- Add more services as needed -->
         </ol>
-        <p>Contact Kino at <a href="tel:(408) 508-1772">(408) 508-1772</a> or email Kino at <a href="mailto:diiemnguyen@yahoo.com?Subject=kinohandyman_services">diiemnguyen@yahoo.com</a> for your home repair needs!</p>
+        <div id="set_card"><img src="img/kino_card.png" alt="kino"></div>
     </div>
-  <div data-pro-badge-shopper-uuid=91bcc317-93bd-4f93-82d3-5bad70df8b9f data-pro-badge-mode=dark style="width:200px"></div> 
-<script defer src="https://pro.godaddy.com/static/js/badge.js"></script> 
-  
     <script>
         // Example JavaScript functionality (optional)
         const phoneNumber = document.querySelector('a[href^="tel"]');
@@ -63,6 +96,3 @@
     </script>
 </body>
 </html>
-
-
- 
