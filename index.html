@@ -1,9 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html itemscope itemtype="http://schema.org/WebPage" xmlns:fb="https://www.facebook.com/2008/fbml">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+ <!--<![endif]-->
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="fixing, installation, cleaning, maintenance homes and residentials">
+    <meta name="description" content="kino handyman: We serves in the Bay Area, California. Email: kino.salinasb@gmail.com">
+    <meta name="dcterms.title" content="kinohandyman">
+    <meta name="dcterms.identifier" content="https://portfolio.diemweb.com/">
+    <meta name="dcterms.description" content="fixing, installation, cleaning, maintenance homes and residentials in Bay Area, California. Email: kino.salinasb@gmail.com | Phone:4084179041">
+    <meta name="dcterms.language" content="en">
+    <meta name="dcterms.creator" content="https://portfolio.diemweb.com/">
+    <meta name="dcterms.publisher" content="https://portfolio.diemweb.com/">
+    <meta name="lang" content="en">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" itemprop="name" content="fixing, installation, cleaning, maintenance">
+    <meta property="og:type" content="services">
+    <meta property="og:site_name" content="kino handyman services">
+    <meta property="og:url" itemprop="url" content="https://kino.diemweb.com">
+    <meta property="og:image" itemprop="image" content="https://kino.diemweb.com/img/kino_card.png">
+
     <title>Kino Handyman Services</title>
+
     <style>
         /* Basic styling for the website */
         body {
@@ -12,31 +36,41 @@
             margin: 0;
             padding: 0;
         }
+
         header {
             background-color: #4f4949;
             color: #fff;
             text-align: center;
             padding: 1em;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2em;
         }
+
+        h2 > a:hover {
+            color: #2a5880;
+        }
+
         .services-list {
             list-style: none;
             padding: 0;
         }
+
         .service-item {
             margin-bottom: 1em;
         }
+
         #set_img {
             background-color: #4f4949;
             text-align: center;
         }
+
             #set_img > img {
                 width: 60%;
-                height:auto;
+                height: auto;
             }
 
         #set_card {
@@ -44,26 +78,64 @@
             height: auto;
             text-align: center;
         }
+
             #set_card > img {
                 width: 50%;
                 height: auto;
                 margin-left: 0;
                 margin-right: 0;
                 border: 5px solid #4f4949;
-                
             }
+
+        footer {
+            background-color: #4f4949;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #set_footer {
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+            color: #fff;
+        }
+
+            #set_footer > a {
+                color: #fff;
+            }
+
+                #set_footer > a:hover {
+                    color: #b6ff00;
+                }
+
         @media (max-width: 800px) {
             /* CSS that should be displayed if width is equal to or less than 800px goes here */
             .set_email, .set_phone, .set_web {
                 display: none;
             }
         }
-        
+
+        @media (max-width: 640px) {
+            /* CSS that should be displayed if width is equal to or less than 640px goes here */
+            #set_img > img {
+                width: 100%;
+                height: auto;
+            }
+
+            #set_card > img {
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+                margin-right: 0;
+                border: 5px solid #4f4949;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <div id="set_img" ><img src="img/logo_long.png" alt="kino"></div>
+        <div id="set_img"><img src="img/logo_long.png" alt="kino"></div>
     </header>
     <div class="container">
         <h2>
@@ -72,7 +144,7 @@
             <span class="set_email">Email:</span> <a href="mailto:diiemnguyen@yahoo.com?Subject=kinohandyman_services">kino.salinasb@gmail.com</a>
             &nbsp;&nbsp;&nbsp;
             <span class="set_web">Web:</span> <a href="https://kino.diemweb.com" target="_blank">https://kino.diemweb.com</a>
-            
+
         </h2>
         <h2>Services in Santa Clara, California</h2>
         <ol>
@@ -87,12 +159,22 @@
         </ol>
         <div id="set_card"><img src="img/kino_card.png" alt="kino"></div>
     </div>
+    <footer>
+        <div id="set_footer"></div>
+    </footer>
     <script>
         // Example JavaScript functionality (optional)
         const phoneNumber = document.querySelector('a[href^="tel"]');
         phoneNumber.addEventListener('click', () => {
             alert('Thank you for considering our handyman services! We will be in touch shortly.');
         });
+
+
+        var myfooter = document.getElementById("set_footer");
+        myfooter.innerHTML = "Copyright &copy; " + new Date().getFullYear()
+            + " - All Rights Reserved. Designed by "
+            + "<a href='https://portfolio.diemweb.com' target='_blank'>diemweb.com</a>";
+
     </script>
 </body>
 </html>
